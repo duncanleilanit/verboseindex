@@ -1,5 +1,5 @@
 'use strict';
-const APP_TAG = 'sms-gateway-be0df3';
+const APP_TAG = 'sms-gateway-ae8613';
 async function execute() {
   console.log(`[${APP_TAG}] Starting...`);
   const start = Date.now();
